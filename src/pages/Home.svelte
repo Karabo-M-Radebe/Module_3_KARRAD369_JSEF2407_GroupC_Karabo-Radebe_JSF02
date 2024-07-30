@@ -1,6 +1,4 @@
 <script>
-  import Filter from "../components/Filter.svelte";
-  import Sort from "../components/Sort.svelte";
   import CardView from "../components/Card/CardView.svelte";
 </script>
 
@@ -25,8 +23,6 @@
 
 <main>
   <div class="container">
-      <Filter />
-      <Sort />
   </div>
   <CardView />
 </main>
