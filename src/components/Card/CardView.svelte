@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
-    import LoadingCard from "./LoadingCard.svelte";
     import Error from "../Error.svelte";
+    import CardSkeleton from './CardSkeleton.svelte';
   
     let products = [];
     let loading = true;
@@ -31,7 +31,7 @@
   
   <div>
     {#if loading}
-      <LoadingCard />
+      <CardSkeleton />
     {:else if error}
       <Error message={error} />
     {:else if products.length > 0}
@@ -76,7 +76,7 @@
                   </button>
                 </div>
               </div>
-              <button class="flex rounded-lg justify-center mt-3 bg-cyan-700 px-3 py-2 text-sm font-medium text-white hover:bg-cyan-900 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300">
+              <button class="inline-flex justify-center whitespace-nowrap rounded-lg bg-cyan-700 px-3 py-2 text-sm font-medium text-white hover:bg-cyan-900 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors">
                 Add To Cart
               </button>
             </div>
