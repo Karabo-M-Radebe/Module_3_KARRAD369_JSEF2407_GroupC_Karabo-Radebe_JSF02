@@ -1,11 +1,13 @@
 <script>
- 
+  import { Router, Route,} from 'svelte-routing';
+  import Navbar from './lib/Navbar.svelte';
+  import Home from './lib/Home.svelte';
 </script>
 
-<main>
-  
-</main>
+<Navbar />
 
-<style>
+<Router>
+  <Route path="/" component={Home} />
+</Router>
+
   
-</style>
