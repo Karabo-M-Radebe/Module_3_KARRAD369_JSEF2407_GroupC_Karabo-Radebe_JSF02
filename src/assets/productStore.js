@@ -1,8 +1,4 @@
-// src/store/productStore.js
-
-import { writable } from 'svelte/store';
-import { get } from 'svelte/store';
-import { derived } from 'svelte/store';
+import { writable, get, derived } from 'svelte/store';
 
 function createProductStore() {
   const { subscribe, set, update } = writable({
@@ -22,10 +18,11 @@ function createProductStore() {
     setFilterItem: (category) => update(state => ({ ...state, filterItem: category })),
     fetchProducts: async () => {
       update(state => ({ ...state, loading: true }));
+      
       try {
         const response = await fetch(
-          state.filterItem !== "All categories"
-            ? `https://fakestoreapi.com/products/category/${state.filterItem}`
+          get(productStore).filterItem !== "All categories"
+            ? `https://fakestoreapi.com/products/category/${get(productStore).filterItem}`
             : `https://fakestoreapi.com/products`
         );
         if (!response.ok) {
@@ -38,14 +35,13 @@ function createProductStore() {
           originalProducts: JSON.parse(JSON.stringify(data)),
           loading: false,
         }));
-        get().sortProducts();
-        get().searchProducts();
+        productStore.sortProducts(); // Call sortProducts directly on productStore
       } catch (error) {
         update(state => ({ ...state, error }));
       } finally {
-        const currentState = get();
-        currentState.sortProducts();
-        currentState.searchProducts();
+        // Remove this line, as it's not necessary
+        // const currentState = get(productStore);
+        // currentState.sortProducts();
       }
     },
     sortProducts: () => update(state => {
@@ -60,17 +56,6 @@ function createProductStore() {
         return {
           ...state,
           products: JSON.parse(JSON.stringify(state.originalProducts))
-        };
-      }
-    }),
-    searchProducts: () => update(state => {
-      if (state.searchTerm.trim() !== "") {
-        const filteredProducts = state.originalProducts.filter(product =>
-          product.title.toLowerCase().includes(state.searchTerm.toLowerCase())
-        );
-        return {
-          ...state,
-          products: JSON.parse(JSON.stringify(filteredProducts))
         };
       }
     }),
