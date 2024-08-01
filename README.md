@@ -43,20 +43,19 @@ Fake Store API: A RESTful API for fetching e-commerce data.
 - Select products to view their description and reviews
 
 # Reflections
-## Areas of Mastery 
-- None, as this was my first time using the Svelte.js framework. However, I gained valuable experience and knowledge in using Svelte.js to build a complex application.
+### Areas of Mastery 
+- First time using the Svelte.js framework, so I did not gain any areas of mastery but i did gain proficiency in using the Svelte syntax. 
 
-## Challenges faced
+### Challenges faced
 - Learning the Svelte.js framework and its ecosystem.
-- Adapting the existing React code to work with Svelte.js.
 - Handling state management and props in Svelte.js.
 - Debugging and troubleshooting issues with the Fake Store API.
+- Event handling using the Svelte syntax.
 
-## Areas of Improvement
+### Areas of Improvement
 - Improving my understanding of Svelte.js and its best practices.
-- Optimizing the application's performance and loading times.
-- Enhancing the user experience with more features and functionality.
+- Enhancing the user experience with more features and functionality (this will be implemented in future projects using Vue.js).
 - Writing more efficient and modular code.
 
 # Overall Learning Experience
-- This project was a challenging but incredibly rewarding experience. I was tasked with learning a new JavaScript framework, Svelte.js, and using it to refactor an existing e-commerce store. At first, I was intimidated by the prospect of learning a new framework, but as I delved deeper into the project, I began to appreciate the simplicity and elegance of Svelte.js. Throughout the project, I encountered numerous challenges, from adapting the existing React code to work with Svelte.js, to debugging and troubleshooting issues with the Fake Store API. However, with each challenge, I gained valuable experience and knowledge that I can apply to future projects. One of the most significant takeaways from this project was the importance of understanding the underlying principles of a framework, rather than just memorizing syntax. As I worked with Svelte.js, I began to appreciate the power of its reactivity system and the simplicity of its component-based architecture. In addition to the technical skills I gained, I also developed my problem-solving skills and my ability to work independently. Throughout the project, I was forced to think critically and creatively, often relying on my own resources to troubleshoot issues and overcome obstacles. Overall, I am proud of what I accomplished in this project, and I am excited to continue learning and growing as a developer. I believe that the skills and knowledge I gained in this project will serve me well in my future endeavors, and I am eager to apply them to new and challenging projects.
+- This project was a challenging but incredibly rewarding experience. I was tasked with learning a new JavaScript framework, Svelte.js, and using it to refactor an existing e-commerce store built using React. Diving deeper into the project, I began to appreciate the simplicity and elegance of Svelte.js, even though it was confusing at first. Throughout the project, I encountered numerous challenges, from refactoring the existing React components to work with Svelte.js, to debugging errors with fetching the API. However, with each challenge, I gained valuable experience and knowledge that I can apply to future projects. One of the most significant takeaways from this project was the importance of understanding the underlying principles of a framework, rather than just memorizing syntax. In addition to the technical skills I gained, I also developed my problem-solving skills and my ability to work independently. Throughout the project, I was forced to think critically and creatively, often relying on my own resources to troubleshoot issues and overcome obstacles. Overall, I am proud of what I accomplished in this project, and I am excited to continue learning and growing as a developer. I believe that the skills and knowledge I gained in this project will serve me well in my future endeavours, and I am eager to apply them to new and challenging projects.
