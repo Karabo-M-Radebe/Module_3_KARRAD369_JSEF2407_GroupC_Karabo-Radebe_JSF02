@@ -4,6 +4,7 @@
   export let onCategoryChange = () => {};
 
   const handleChange = (event) => {
+    // @ts-ignore
     onCategoryChange(event.target.value);
   }
 </script>
