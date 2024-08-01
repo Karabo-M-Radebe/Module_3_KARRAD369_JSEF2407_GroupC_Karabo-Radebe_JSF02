@@ -20,9 +20,8 @@
       throw new error("Failed to fetch products");
     }
     products = await response.json();
-      // Extract unique categories from products
       categories = [...new Set(products.map(product => product.category))];
-      filteredProducts = [...products]; // Set initial filtered products
+      filteredProducts = [...products];
     } catch (err) {
       error = err.message;
     } finally {
