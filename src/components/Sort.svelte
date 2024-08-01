@@ -1,4 +1,13 @@
 <script>
+
+  /**
+   * This function handles the change event of the sort select dropdown.
+   * It calls the `onSortChange` function with the selected value.
+   *
+   * @param {Event} event - The change event object.
+   * @param {string} event.target.value - The selected value from the dropdown.
+   * @returns {void}
+   */
   export let onSortChange;
 
   function handleSortChange(event) {

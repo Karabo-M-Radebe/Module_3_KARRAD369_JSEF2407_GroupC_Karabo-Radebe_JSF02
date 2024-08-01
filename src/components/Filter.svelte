@@ -1,8 +1,23 @@
 <script>
+
+  /**
+   * Exported properties for the component.
+   *
+   * @property {string[]} categories - An array of category names.
+   * @property {string} selectedCategory - The currently selected category.
+   * @property {(category: string) => void} onCategoryChange - A callback function to handle category changes.
+   */
   export let categories = [];
   export let selectedCategory = '';
   export let onCategoryChange = () => {};
 
+  /**
+   * This function handles the change event of the category select dropdown.
+   * It calls the provided `onCategoryChange` function with the selected category value.
+   *
+   * @param {Event} event - The change event object.
+   * @returns {void}
+   */
   const handleChange = (event) => {
     // @ts-ignore
     onCategoryChange(event.target.value);

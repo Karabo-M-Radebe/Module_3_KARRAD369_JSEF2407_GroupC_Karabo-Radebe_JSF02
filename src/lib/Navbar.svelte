@@ -1,4 +1,5 @@
 <script>
+   // variable used to control the visibility of the navigation bar on smaller screens.
   let isNavbarVisible = false;
 
   const toggleNavbar = () => {

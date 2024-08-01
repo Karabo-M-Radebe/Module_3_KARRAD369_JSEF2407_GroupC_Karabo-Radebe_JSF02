@@ -13,6 +13,12 @@
     let selectedCategory = '';
     let selectedSort = 'default';
 
+
+  /**
+ * Fetches and processes product data from the API.
+ *
+ * @returns {Promise<void>} - A promise that resolves when the data fetching and processing is complete.
+ */
   async function getProducts() {
   try {
     let response = await fetch('https://fakestoreapi.com/products');
@@ -30,6 +36,13 @@
     }
   }
 
+  /**
+ * Fetches and processes product data for a specific category from the API.
+ *
+ * @param {string} category - The category for which to fetch products.
+ *
+ * @returns {Promise<void>} - A promise that resolves when the data fetching and processing is complete.
+ */
   async function getProductsByCategory(category) {
     try {
       loading = true;
@@ -45,6 +58,13 @@
   }
 }
 
+/**
+ * Handles the change of the selected category.
+ *
+ * @param {string} category - The new selected category.
+ *
+ * @returns {void}
+ */
   function handleCategoryChange(category) {
     selectedCategory = category;
     if (selectedCategory) {
@@ -54,6 +74,13 @@
   }
 }
 
+/**
+ * Sorts the products based on the selected option.
+ *
+ * @param {string} option - The sorting option ('lowToHigh', 'highToLow', or 'default').
+ *
+ * @returns {void}
+ */
 function sortProducts(option) {
   selectedSort = option;
   if (option === 'lowToHigh') {
@@ -65,9 +92,23 @@ function sortProducts(option) {
   }
 }
 
+
+/**
+ * Handles the change of the selected sorting option.
+ *
+ * @param {string} option - The new selected sorting option.
+ *
+ * @returns {void}
+ */
 function handleSortChange(option) {
   sortProducts(option);
 }
+
+/**
+ * Fetches product data when the component is mounted.
+ *
+ * @returns {void}
+ */
 
 onMount(() => {
   getProducts();

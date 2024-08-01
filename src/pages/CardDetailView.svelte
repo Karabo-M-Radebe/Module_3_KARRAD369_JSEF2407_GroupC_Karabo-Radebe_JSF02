@@ -7,8 +7,14 @@
   let error = null;
   let loading = false;
 
+  // Exported property to receive the product id from the parent component
   export let id;
 
+  /**
+   * Fetches product details from the API based on the provided productId.
+   * @param {string} productId - The id of the product to fetch.
+   * @returns {Object} - An object containing the response data or an error message.
+   */
   async function getProductDetails(productId) {
     try {
       const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
@@ -24,6 +30,7 @@
     }
   }
 
+  // On component mount, fetch product details and handle loading and error states
   onMount(async () => {
     loading = true;
     const { response, error: fetchError } = await getProductDetails(id);
