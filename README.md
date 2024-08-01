@@ -1,47 +1,62 @@
-# Svelte + Vite
+[JSF02] Project: Svelte Challenge
 
-This template should help get you started developing with Svelte in Vite.
+# Project Overview
+- For the project 'JSF02', I was tasked with using the starter code from the CodeSpace-Academy repo in order to refactor into an Svelte.js based project. The repo included an e-commerce store which uses an API to fetch all the data that is displayed in the store, the store was a React based project that included all the accompanying components to build out the e-commerce store. I had to use my new-found knowledge to accomplish this brief and find a way to complete the brief.
 
-## Recommended IDE Setup
+# Project Brief 
+1. Study and understand the Svelte e-commerce store rubric provided in your student sheet.
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+2. Have a look at the model e-commerce store provided in React: https://github.com/CodeSpace-Academy/jsf-react-ecommerce.
 
-## Need an official Svelte framework?
+3. Study the Fake Store API and see what endpoints you will need to fetch different pieces of data from.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+4. Code your solution in Svelte and document your code with JSDoc.
 
-## Technical considerations
+5. Commit changes to your Github repository (remember the naming convention: Module_3_StudentNo_Classcode_Group_Name-Surname_JSF02)
 
-**Why use this over SvelteKit?**
+6. Add a README.md file with the project description, how to set it up, technologies used and other information specified in the rubric
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+7. Test your application for any bugs and improvements.
 
-This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+8. Verify that your changes have been successfully pushed to your remote GitHub repository
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+9. Submit the GitHub Repository Link to the LMS JSF02 Submission Project Tab.
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+# Technologies Used 
+Svelte.js: An open-source JavaScript framework designed to build user interfaces (UIs) for the web
+TailwindCSS: A utility-first CSS framework for styling and layout.
+Vite: A modern development server and build tool for efficient development and deployment.
+Fake Store API: A RESTful API for fetching e-commerce data.
 
-**Why include `.vscode/extensions.json`?**
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+# How to run the project
+1. Clone the repository to your local machine.
+2. Run `npm install` to install all dependencies.
+3. Run `npm run dev` to start the project in development mode.
+4. Open your web browser and navigate to the localhost link to access the e-commerce store.
 
-**Why enable `checkJs` in the JS template?**
+# Usage examples
+- Browse through products
+- Sort the products by price: highest to lowest and vice versa
+- Filter products by category
+- Select products to view their description and reviews
 
-It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+# Reflections
+## Areas of Mastery 
+- None, as this was my first time using the Svelte.js framework. However, I gained valuable experience and knowledge in using Svelte.js to build a complex application.
 
-**Why is HMR not preserving my local component state?**
+## Challenges faced
+- Learning the Svelte.js framework and its ecosystem.
+- Adapting the existing React code to work with Svelte.js.
+- Handling state management and props in Svelte.js.
+- Debugging and troubleshooting issues with the Fake Store API.
 
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+## Areas of Improvement
+- Improving my understanding of Svelte.js and its best practices.
+- Optimizing the application's performance and loading times.
+- Enhancing the user experience with more features and functionality.
+- Writing more efficient and modular code.
 
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```js
-// store.js
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
-```
+# Overall Learning Experience
+- This project was a challenging but incredibly rewarding experience. I was tasked with learning a new JavaScript framework, Svelte.js, and using it to refactor an existing e-commerce store. At first, I was intimidated by the prospect of learning a new framework, but as I delved deeper into the project, I began to appreciate the simplicity and elegance of Svelte.js. Throughout the project, I encountered numerous challenges, from adapting the existing React code to work with Svelte.js, to debugging and troubleshooting issues with the Fake Store API. However, with each challenge, I gained valuable experience and knowledge that I can apply to future projects. One of the most significant takeaways from this project was the importance of understanding the underlying principles of a framework, rather than just memorizing syntax. As I worked with Svelte.js, I began to appreciate the power of its reactivity system and the simplicity of its component-based architecture. In addition to the technical skills I gained, I also developed my problem-solving skills and my ability to work independently. Throughout the project, I was forced to think critically and creatively, often relying on my own resources to troubleshoot issues and overcome obstacles. Overall, I am proud of what I accomplished in this project, and I am excited to continue learning and growing as a developer. I believe that the skills and knowledge I gained in this project will serve me well in my future endeavors, and I am eager to apply them to new and challenging projects.
