@@ -46,8 +46,8 @@
   </div>
 {:else}
  <div class="grid m-10 space-y-5">
-  <a href="/">
-    <button class="bg-gray-500 text-white py-2 px-4 rounded">Back</button>
+  <a  class="w-20px" href="/">
+    <button class="bg-gray-500 text-white py-2 px-4 rounded">back</button>
   </a>
   <div class="mt-6 sm:mt-8 lg:flex lg:items-start lg:max-w-6xl xl:max-w-7xl">
     <div class="mx-auto w-2/5 flex-none">
