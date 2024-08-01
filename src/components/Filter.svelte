@@ -3,7 +3,7 @@
   export let selectedCategory = '';
   export let onCategoryChange = () => {};
 
-  function handleChange(event) {
+  const handleChange = (event) => {
     onCategoryChange(event.target.value);
   }
 </script>
